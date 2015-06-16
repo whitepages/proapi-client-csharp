@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['ibusiness_2ecs',['IBusiness.cs',['../_i_business_8cs.html',1,'']]],
+  ['icontacttyped_2ecs',['IContactTyped.cs',['../_i_contact_typed_8cs.html',1,'']]],
+  ['idata_2ecs',['IData.cs',['../_i_data_8cs.html',1,'']]],
+  ['idatasource_2ecs',['IDataSource.cs',['../_i_data_source_8cs.html',1,'']]],
+  ['ientity_2ecs',['IEntity.cs',['../_i_entity_8cs.html',1,'']]],
+  ['ilegalentity_2ecs',['ILegalEntity.cs',['../_i_legal_entity_8cs.html',1,'']]],
+  ['ilocation_2ecs',['ILocation.cs',['../_i_location_8cs.html',1,'']]],
+  ['internalexception_2ecs',['InternalException.cs',['../_internal_exception_8cs.html',1,'']]],
+  ['iparamvalueformatter_2ecs',['IParamValueFormatter.cs',['../_i_param_value_formatter_8cs.html',1,'']]],
+  ['iperson_2ecs',['IPerson.cs',['../_i_person_8cs.html',1,'']]],
+  ['iphone_2ecs',['IPhone.cs',['../_i_phone_8cs.html',1,'']]],
+  ['iquery_2ecs',['IQuery.cs',['../_i_query_8cs.html',1,'']]],
+  ['iqueryencoder_2ecs',['IQueryEncoder.cs',['../_i_query_encoder_8cs.html',1,'']]],
+  ['iqueryform_2ecs',['IQueryForm.cs',['../_i_query_form_8cs.html',1,'']]],
+  ['iresponsedecoder_2ecs',['IResponseDecoder.cs',['../_i_response_decoder_8cs.html',1,'']]],
+  ['iresultfinder_2ecs',['IResultFinder.cs',['../_i_result_finder_8cs.html',1,'']]]
+];

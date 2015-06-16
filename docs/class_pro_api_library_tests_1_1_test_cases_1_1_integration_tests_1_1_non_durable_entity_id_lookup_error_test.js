@@ -1,0 +1,8 @@
+var class_pro_api_library_tests_1_1_test_cases_1_1_integration_tests_1_1_non_durable_entity_id_lookup_error_test =
+[
+    [ "ItShouldBeFailureResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_integration_tests_1_1_non_durable_entity_id_lookup_error_test.html#a405afd497e8d78e15bad2eb52082caef", null ],
+    [ "ItShouldHaveAppropriateErrorMessage", "class_pro_api_library_tests_1_1_test_cases_1_1_integration_tests_1_1_non_durable_entity_id_lookup_error_test.html#a700f35c22eb4771bc48b1e9323001e9c", null ],
+    [ "ItShouldHaveNoResults", "class_pro_api_library_tests_1_1_test_cases_1_1_integration_tests_1_1_non_durable_entity_id_lookup_error_test.html#a06e486ff613e24ff9c4bc0542df8ccc2", null ],
+    [ "PerformQuery", "class_pro_api_library_tests_1_1_test_cases_1_1_integration_tests_1_1_non_durable_entity_id_lookup_error_test.html#a890e2636e61581ffae7416becf280e23", null ],
+    [ "ExpectedMessageType", "class_pro_api_library_tests_1_1_test_cases_1_1_integration_tests_1_1_non_durable_entity_id_lookup_error_test.html#a7cac52b812ae31f072c444c498f4790b", null ]
+];

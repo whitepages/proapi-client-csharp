@@ -1,0 +1,19 @@
+var class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4 =
+[
+    [ "DecodeBusinessResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#abce2c3c09ac715db78bf9b87928ed17f", null ],
+    [ "DecodeLocationResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a642492aed2901057ddf5601bcf41e8a9", null ],
+    [ "DecodePersonResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a4e03da445493ba9b4fc1de95dbcb7d7b", null ],
+    [ "DecodePhoneResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a536ea152ef5a630a105be1d52bffc101", null ],
+    [ "DecodePhoneResponse2", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a5946f70dd17f2d9b155174dfdc7c8a84", null ],
+    [ "_businessResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a40f3ac861874eb950d114863e47ae009", null ],
+    [ "_locationResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#ae6e4f29a8d4463d5d04cc3be3f38ee0d", null ],
+    [ "_personResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a44ebc587ced01c23a15e6d379d58dc83", null ],
+    [ "_phoneResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a95b67996e4587be675bc5092b5c47ad0", null ],
+    [ "_phoneResponse2", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a12f80bb5913b66045262bacb06781c14", null ],
+    [ "Client", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a9c1a4954ad20d68fa6d522c18798541b", null ],
+    [ "BusinessResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a8406ee56b01c069c46cfd80e6a5339bc", null ],
+    [ "LocationResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a5fec154666c482552b9c5ae803fc4a40", null ],
+    [ "PersonResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a49e98963c31acd70733b8dc998d2155e", null ],
+    [ "PhoneResponse", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#a4ccbdea36e1f3d7fecbeffad1565002c", null ],
+    [ "PhoneResponse2", "class_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_t085332eea6a58933bfd0cdcc01f525f4.html#af9015f68a00a4d77c7e26fc346ade1f1", null ]
+];

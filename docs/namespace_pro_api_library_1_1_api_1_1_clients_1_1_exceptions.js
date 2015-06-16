@@ -1,0 +1,4 @@
+var namespace_pro_api_library_1_1_api_1_1_clients_1_1_exceptions =
+[
+    [ "ResponseDecoderException", "class_pro_api_library_1_1_api_1_1_clients_1_1_exceptions_1_1_response_decoder_exception.html", "class_pro_api_library_1_1_api_1_1_clients_1_1_exceptions_1_1_response_decoder_exception" ]
+];

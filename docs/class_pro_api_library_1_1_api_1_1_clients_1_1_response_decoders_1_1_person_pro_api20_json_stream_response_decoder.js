@@ -1,0 +1,4 @@
+var class_pro_api_library_1_1_api_1_1_clients_1_1_response_decoders_1_1_person_pro_api20_json_stream_response_decoder =
+[
+    [ "Decode", "class_pro_api_library_1_1_api_1_1_clients_1_1_response_decoders_1_1_person_pro_api20_json_stream_response_decoder.html#ab916ff05c3e172b59434c215a6c1782a", null ]
+];

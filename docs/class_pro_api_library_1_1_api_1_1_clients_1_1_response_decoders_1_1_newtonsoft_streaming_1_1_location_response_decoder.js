@@ -1,0 +1,4 @@
+var class_pro_api_library_1_1_api_1_1_clients_1_1_response_decoders_1_1_newtonsoft_streaming_1_1_location_response_decoder =
+[
+    [ "Decode", "class_pro_api_library_1_1_api_1_1_clients_1_1_response_decoders_1_1_newtonsoft_streaming_1_1_location_response_decoder.html#ab5696429ec75f920c4e61ee1e9ad0946", null ]
+];

@@ -1,0 +1,5 @@
+var namespace_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests =
+[
+    [ "QueryEncoderTests", "namespace_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_query_encoder_tests.html", "namespace_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_query_encoder_tests" ],
+    [ "ResponseDecoderTests", "namespace_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_tests.html", "namespace_pro_api_library_tests_1_1_test_cases_1_1_api_tests_1_1_client_tests_1_1_response_decoder_tests" ]
+];
