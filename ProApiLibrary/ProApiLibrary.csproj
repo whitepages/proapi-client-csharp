@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E8299EE-4474-41B1-BD22-63EAD8BCC5A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProApiLibrary</RootNamespace>
+    <AssemblyName>ProApiLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ProApiLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\Clients\BusinessProxy.cs" />
+    <Compile Include="Api\Clients\Client.cs" />
+    <Compile Include="Api\Clients\Config.cs" />
+    <Compile Include="Api\Clients\Exceptions\ResponseDecoderException.cs" />
+    <Compile Include="Api\Clients\LocationProxy.cs" />
+    <Compile Include="Api\Clients\PhoneProxy.cs" />
+    <Compile Include="Api\Clients\PersonProxy.cs" />
+    <Compile Include="Api\Clients\IQueryForm.cs" />
+    <Compile Include="Api\Clients\DataSources\HttpDataSource.cs" />
+    <Compile Include="Api\Clients\IData.cs" />
+    <Compile Include="Api\Clients\IDataSource.cs" />
+    <Compile Include="Api\Clients\IQueryEncoder.cs" />
+    <Compile Include="Api\Clients\IResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\ProApi20JsonStreamResponseDecoder.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\BusinessQueryToProApi20UriEncoder.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\PhoneQueryToProApi20UriEncoder.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\LocationQueryToProApi20UriEncoder.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\ProApi20ParamValueFormatter.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\QueryToProApi20UriEncoder.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\WhereQueryToProApi20UriEncoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\BusinessProApi20JsonStreamResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\LocationProApi20JsonStreamResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\NewtonsoftStreaming\ErrorResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\NewtonsoftStreaming\LocationResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\NewtonsoftStreaming\PhoneResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\PhoneProApi20JsonStreamResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\NewtonsoftStreaming\EntityConverter.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\NewtonsoftStreaming\PersonResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\NewtonsoftStreaming\BusinessResponseDecoder.cs" />
+    <Compile Include="Api\Clients\ResponseDictionary.cs" />
+    <Compile Include="Api\Clients\Responses\BusinessResponse.cs" />
+    <Compile Include="Api\Clients\Responses\ErrorResponse.cs" />
+    <Compile Include="Api\Clients\Responses\LocationResponse.cs" />
+    <Compile Include="Api\Clients\Responses\PersonResponse.cs" />
+    <Compile Include="Api\Clients\QueryEncoders\PersonQueryToProApi20UriEncoder.cs" />
+    <Compile Include="Api\Clients\IResultFinder.cs" />
+    <Compile Include="Api\Clients\ResponseDecoders\PersonProApi20JsonStreamResponseDecoder.cs" />
+    <Compile Include="Api\Clients\Responses\PhoneResponse.cs" />
+    <Compile Include="Api\Clients\ResultFinderFactory.cs" />
+    <Compile Include="Api\Clients\ResultFinder.cs" />
+    <Compile Include="Api\Clients\Utils\HttpResponse.cs" />
+    <Compile Include="Api\Clients\Utils\IParamValueFormatter.cs" />
+    <Compile Include="Api\Clients\Utils\UriEncoder.cs" />
+    <Compile Include="Api\Clients\Utils\UriQueryParameters.cs" />
+    <Compile Include="Api\Exceptions\AuthException.cs" />
+    <Compile Include="Api\Exceptions\DataSourceException.cs" />
+    <Compile Include="Api\Exceptions\FindException.cs" />
+    <Compile Include="Api\Exceptions\InternalException.cs" />
+    <Compile Include="Api\Exceptions\QueryEncoderException.cs" />
+    <Compile Include="Api\Exceptions\QuotaExceededException.cs" />
+    <Compile Include="Api\Exceptions\ResponseDecoderException.cs" />
+    <Compile Include="Api\Exceptions\ResponseException.cs" />
+    <Compile Include="Api\Queries\BusinessQuery.cs" />
+    <Compile Include="Api\Queries\EntityQuery.cs" />
+    <Compile Include="Api\Queries\IQuery.cs" />
+    <Compile Include="Api\Queries\LocationQuery.cs" />
+    <Compile Include="Api\Queries\PersonQuery.cs" />
+    <Compile Include="Api\Queries\PhoneLiteQuery.cs" />
+    <Compile Include="Api\Queries\PhoneQuery.cs" />
+    <Compile Include="Api\Queries\WhereQuery.cs" />
+    <Compile Include="Api\Responses\Response.cs" />
+    <Compile Include="Api\Responses\ResponseMessages.cs" />
+    <Compile Include="Data\Associations\Association.cs" />
+    <Compile Include="Data\Associations\BusinessAssociation.cs" />
+    <Compile Include="Data\Associations\SerializableAssociation.cs" />
+    <Compile Include="Data\Associations\PersonAssociation.cs" />
+    <Compile Include="Data\Associations\PhoneAssociation.cs" />
+    <Compile Include="Data\Associations\IContactTyped.cs" />
+    <Compile Include="Data\Associations\LegalEntityAssociation.cs" />
+    <Compile Include="Data\Associations\LocationAssociation.cs" />
+    <Compile Include="Data\Entities\BaseEntity.cs" />
+    <Compile Include="Data\Entities\Business.cs" />
+    <Compile Include="Data\Entities\AgeRange.cs" />
+    <Compile Include="Data\Entities\Error.cs" />
+    <Compile Include="Data\Entities\ILocation.cs" />
+    <Compile Include="Data\Entities\IPhone.cs" />
+    <Compile Include="Data\Entities\IPerson.cs" />
+    <Compile Include="Data\Entities\Date.cs" />
+    <Compile Include="Data\Entities\Durability.cs" />
+    <Compile Include="Data\Entities\EntityProxy.cs" />
+    <Compile Include="Data\Entities\IBusiness.cs" />
+    <Compile Include="Data\Entities\IEntity.cs" />
+    <Compile Include="Data\Entities\EntityId.cs" />
+    <Compile Include="Data\Entities\Gender.cs" />
+    <Compile Include="Data\Entities\ILegalEntity.cs" />
+    <Compile Include="Data\Entities\LegalEntity.cs" />
+    <Compile Include="Data\Entities\LineType.cs" />
+    <Compile Include="Data\Entities\GeoAccuracy.cs" />
+    <Compile Include="Data\Entities\LatLong.cs" />
+    <Compile Include="Data\Entities\Location.cs" />
+    <Compile Include="Data\Entities\TimePeriod.cs" />
+    <Compile Include="Data\Entities\Name.cs" />
+    <Compile Include="Data\Entities\Person.cs" />
+    <Compile Include="Data\Entities\PersonType.cs" />
+    <Compile Include="Data\Entities\Phone.cs" />
+    <Compile Include="Data\Entities\Reputation.cs" />
+    <Compile Include="Data\Messages\Message.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

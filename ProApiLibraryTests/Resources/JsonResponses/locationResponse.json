@@ -1,0 +1,49 @@
+﻿{
+ "results":[
+  "Location.88e44955-805c-455a-99da-d7444ca5c484.Durable"
+ ],
+ "dictionary":{
+  "Location.88e44955-805c-455a-99da-d7444ca5c484.Durable":{
+   "id":{
+    "key":"Location.88e44955-805c-455a-99da-d7444ca5c484.Durable",
+    "url":"https://proapi.whitepages.com/2.0/entity/Location.88e44955-805c-455a-99da-d7444ca5c484.Durable.json?api_key=ffffffffffffffffffffffffffffffff",
+    "type":"Location",
+    "uuid":"88e44955-805c-455a-99da-d7444ca5c484",
+    "durability":"Durable"
+   },
+   "type":"Address",
+   "valid_for":null,
+   "legal_entities_at":null,
+   "city":"Seattle",
+   "postal_code":"98101",
+   "zip4":"2625",
+   "state_code":"WA",
+   "country_code":"US",
+   "address":"1301 5th Ave Ste 1600, Seattle WA 98101-2625",
+   "house":"1301",
+   "street_name":"5th",
+   "street_type":"Ave",
+   "pre_dir":null,
+   "post_dir":null,
+   "apt_number":"1600",
+   "apt_type":"Ste",
+   "box_number":null,
+   "is_receiving_mail":true,
+   "not_receiving_mail_reason":null,
+   "usage":"Business",
+   "delivery_point":"MultiUnit",
+   "box_type":null,
+   "address_type":"Highrise",
+   "lat_long":{
+    "latitude":47.608624,
+    "longitude":-122.334442,
+    "accuracy":"RoofTop"
+   },
+   "is_deliverable":true,
+   "standard_address_line1":"1301 5th Ave Ste 1600",
+   "standard_address_line2":"",
+   "standard_address_location":"Seattle WA 98101-2625"
+  }
+ },
+ "messages":[]
+}

@@ -1,0 +1,21 @@
+*.suo
+*.cache
+*.dll
+*.pdb
+*/obj/*
+*.exe
+*.user
+*/bin/*
+
+# Double-check we don't commit these, as they can have dev private configs.
+*.vshost.exe.config
+
+# https://github.com/github/gitignore/blob/master/VisualStudio.gitignore#L141-L148
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
