@@ -35,7 +35,12 @@ namespace ProApiLibrary.Data.Entities
 
 		public static int? GetSpamScore(Reputation reputation)
 		{
-			return reputation != null ? reputation.SpamScore : null;
+			int? ret = null;
+			if (reputation != null)
+			{
+				ret = reputation.Level;
+			}
+			return ret;
 		}
 
 		[DataMember(Name="line_type")]

@@ -14,7 +14,7 @@ namespace ProApiLibrary.Data.Entities
 		
 		public override string ToString()
 		{
-			return String.Format("{0}-{1}", this.Start, this.End);
+			return String.Format("AgeRange{{start={0}, end={1}}}", this.Start, this.End);
 		}
 	}
 }

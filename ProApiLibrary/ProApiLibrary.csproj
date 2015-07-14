@@ -31,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -123,6 +124,7 @@
     <Compile Include="Data\Entities\BaseEntity.cs" />
     <Compile Include="Data\Entities\Business.cs" />
     <Compile Include="Data\Entities\AgeRange.cs" />
+    <Compile Include="Data\Entities\ReputationDetails.cs" />
     <Compile Include="Data\Entities\Error.cs" />
     <Compile Include="Data\Entities\ILocation.cs" />
     <Compile Include="Data\Entities\IPhone.cs" />

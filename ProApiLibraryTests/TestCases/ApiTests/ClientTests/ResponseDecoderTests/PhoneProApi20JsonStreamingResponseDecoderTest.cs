@@ -98,7 +98,7 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		[TestMethod]
 		public void HasSpamScore()
 		{
-			Assert.AreEqual(0, _phone.Reputation.SpamScore);
+			Assert.AreEqual(0, _phone.Reputation.Level);
 		}
 
 		[TestMethod]

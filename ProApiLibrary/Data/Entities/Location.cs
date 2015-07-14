@@ -94,9 +94,9 @@ namespace ProApiLibrary.Data.Entities
 		public LocationType? Type { get; set; }
 		[DataMember(Name = "address")]
 		public string Address { get; set; }
-		[DataMember(Name = "standard_address_line_1")]
+		[DataMember(Name = "standard_address_line1")]
 		public string StandardAddressLine1 { get; set; }
-		[DataMember(Name = "standard_address_line_2")]
+		[DataMember(Name = "standard_address_line2")]
 		public string StandardAddressLine2 { get; set; }
 		[DataMember(Name = "standard_address_location")]
 		public string StandardAddressLocation { get; set; }

@@ -151,7 +151,8 @@
    "carrier":null,
    "do_not_call":false,
    "reputation":{
-    "spam_score":0
+    "level":0,
+	"details":null
    },
    "is_prepaid":null,
    "best_location":{

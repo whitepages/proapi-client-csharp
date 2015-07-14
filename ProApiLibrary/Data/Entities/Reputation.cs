@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace ProApiLibrary.Data.Entities
 {
@@ -14,23 +9,44 @@ namespace ProApiLibrary.Data.Entities
 	[DataContract]
 	public class Reputation
 	{
-		private int? _spamScore;
+		private int? _level;
+		private int? _volumeScore;
+		private int? _reportCount;
+
+		private IEnumerable<ReputationDetails> _reputationDetails;
 
 		internal Reputation()
 		{
 			
 		}
 
-		public Reputation(int spamScore)
+		[DataMember(Name="level")]
+		public int? Level
 		{
-			_spamScore = spamScore;
+			get { return _level; }
+			set { _level = value; }
 		}
 
-		[DataMember(Name="spam_score")]
-		public int? SpamScore
+		[DataMember(Name = "volume_score")]
+		public int? VolumeScore
 		{
-			get { return _spamScore; }
-			set { _spamScore = value; }
+			get { return _volumeScore; }
+			set { _volumeScore = value; }
+		}
+
+		[DataMember(Name = "report_count")]
+		public int? ReportCount
+		{
+			get { return _reportCount; }
+			set { _reportCount = value; }
+		}
+
+
+		[DataMember(Name="details")]
+		public IEnumerable<ReputationDetails> Details
+		{
+			get { return _reputationDetails ?? (_reputationDetails = new List<ReputationDetails>()); }
+			set { _reputationDetails = value; }
 		}
 	}
 }

@@ -120,8 +120,13 @@ namespace ProApiLibrary.Data.Entities
 
 			public override string ToString()
 			{
-				return String.Format("{0} {1} {2} {3} {4}", this.Salutation, this.FirstName, this.MiddleName, this.LastName,
-									 this.Suffix).Trim();
+				return String.Format("[Name{{salutation={0}, firstName='{1}', middleName='{2}', lastName='{3}', suffix='{4}'}}]", 
+					String.IsNullOrWhiteSpace(this.Salutation) ? "null" : this.Salutation, 
+					String.IsNullOrWhiteSpace(this.FirstName) ? "null" : this.FirstName, 
+					String.IsNullOrWhiteSpace(this.MiddleName) ? "null" : this.MiddleName, 
+					String.IsNullOrWhiteSpace(this.LastName) ? "null" : this.LastName,
+					String.IsNullOrWhiteSpace(this.Suffix) ? "null" : this.Suffix.Trim()
+					);
 			}
 		}
 
