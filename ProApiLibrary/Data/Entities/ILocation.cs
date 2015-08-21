@@ -27,6 +27,7 @@
 		string AptNumber { get; }
 		string BoxNumber { get; }
 		TimePeriod ValidFor { get; }
+		bool IsHistorical { get; }
 		bool? IsReceivingMail { get; }
 		Location.LocationNotReceivingMailReason? NotReceivingMailReason { get; }
 		Location.AddressUsage? Usage { get; }
