@@ -85,7 +85,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EmbeddedResource Include="Resources\JsonResponses\businessResponse.json" />
     <EmbeddedResource Include="Resources\JsonResponses\locationResponse.json" />
     <EmbeddedResource Include="Resources\JsonResponses\personResponse.json" />

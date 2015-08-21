@@ -133,6 +133,11 @@ namespace ProApiLibrary.Api.Clients
 			get { return _location == null ? null : _location.ValidFor; }
 		}
 
+		public bool IsHistorical
+		{
+			get { return _location != null && _location.IsHistorical; }
+		}
+
 		public bool? IsReceivingMail
 		{
 			get { return _location == null ? null : _location.IsReceivingMail; }
