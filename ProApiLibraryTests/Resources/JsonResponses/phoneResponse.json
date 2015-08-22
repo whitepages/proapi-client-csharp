@@ -157,10 +157,10 @@
    "is_prepaid":null,
    "best_location":{
     "id":{
-     "key":"Location.0a48926c-b02c-468e-ba80-18cc77dfa3fc.Durable",
-     "url":"https://proapi.whitepages.com/2.0/entity/Location.0a48926c-b02c-468e-ba80-18cc77dfa3fc.Durable.json?api_key=ffffffffffffffffffffffffffffffff",
+     "key":"Location.f680d715-f932-4e68-9e64-9871113a6b81.Durable",
+     "url":"https://proapi.whitepages.com/2.0/entity/Location.f680d715-f932-4e68-9e64-9871113a6b81.Durable.json?api_key=ffffffffffffffffffffffffffffffff",
      "type":"Location",
-     "uuid":"0a48926c-b02c-468e-ba80-18cc77dfa3fc",
+     "uuid":"f680d715-f932-4e68-9e64-9871113a6b81",
      "durability":"Durable"
     }
    }

@@ -93,6 +93,7 @@
     <EmbeddedResource Include="Resources\JsonResponses\personResponse.json" />
     <EmbeddedResource Include="Resources\JsonResponses\phoneResponse.json" />
     <EmbeddedResource Include="Resources\JsonResponses\phoneResponse2.json" />
+    <EmbeddedResource Include="Resources\JsonResponses\phoneResponse3.json" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

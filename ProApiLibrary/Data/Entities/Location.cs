@@ -137,7 +137,7 @@ namespace ProApiLibrary.Data.Entities
 		[DataMember(Name = "address_type")]
 		public LocationAddressType? AddressType { get; set; }
 
-		[DataMember(Name = "lat_long")]
+		[DataMember(Name = "lat_long", IsRequired=false)]
 		public LatLong LatLong { get; set; }
 
 		[DataMember(Name = "is_deliverable")]

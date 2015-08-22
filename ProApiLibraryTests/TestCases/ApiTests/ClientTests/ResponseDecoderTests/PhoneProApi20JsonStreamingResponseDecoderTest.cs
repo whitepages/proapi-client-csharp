@@ -13,13 +13,20 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 	public class PhoneProApi20JsonStreamingResponseDecoderTest
 	{
 		private static Response<IPhone> _response;
+		private static Response<IPhone> _response3;
+ 
 		private static IPhone _phone;
+		private static IPhone _phone3;
+
 
 		[ClassInitialize]
 		public static void SetUp(TestContext context)
 		{
-			_response = (new ResponseDecoderHelper()).PhoneResponse;
+			var helper = new ResponseDecoderHelper();
+			_response = helper.PhoneResponse;
+			_response3 = helper.PhoneResponse3;
 			_phone = _response.Results.First();
+			_phone3 = _response3.Results.First();
 		}
 
 		[TestMethod]
@@ -79,7 +86,7 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		[TestMethod]
 		public void HasBestLocationAssociation()
 		{
-			Assert.AreEqual(EntityId.FromString("Location.0a48926c-b02c-468e-ba80-18cc77dfa3fc.Durable"), _phone.BestLocationAssociation.EntityId);
+			Assert.AreEqual(EntityId.FromString("Location.f680d715-f932-4e68-9e64-9871113a6b81.Durable"), _phone.BestLocationAssociation.EntityId);
 		}
 
 		[TestMethod]
@@ -107,6 +114,12 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 			Assert.IsTrue(_phone.Locations.First().IsProxy);
 			Assert.IsFalse(_phone.Locations.First().IsLoaded);
 			Assert.IsInstanceOfType(_phone.Locations.First(), typeof(LocationProxy));
+		}
+
+		[TestMethod]
+		public void NullLatLongIsHandled()
+		{
+			Assert.IsNull(_phone3.BestLocation.LatLong);
 		}
 	}
 }
