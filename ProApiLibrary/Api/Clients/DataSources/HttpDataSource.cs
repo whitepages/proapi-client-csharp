@@ -15,7 +15,7 @@ namespace ProApiLibrary.Api.Clients.DataSources
 		{
 			try
 			{
-				var request = WebRequest.CreateHttp(uri);
+				var request = WebRequest.Create(uri);
 				request.Method = "GET";
 				var response = (HttpWebResponse) request.GetResponse();
 				var statusCode = response.StatusCode;

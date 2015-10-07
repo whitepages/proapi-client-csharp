@@ -32,7 +32,6 @@ namespace ProApiLibrary.Data.Associations
 	/// <seealso cref="BusinessAssociation"/>
 	/// <seealso cref="PhoneAssociation"/>
 	/// <seealso cref="LocationAssociation"/>
-
 	/// </remarks>
 	[DataContract]
 	public abstract class Association
