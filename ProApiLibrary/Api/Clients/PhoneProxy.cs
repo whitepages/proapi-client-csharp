@@ -48,6 +48,8 @@ namespace ProApiLibrary.Api.Clients
 		public bool? DoNotCall { get { return _phone == null ? null : _phone.DoNotCall; } }
 		public bool? IsPrepaid { get { return _phone == null ? null : _phone.IsPrepaid; }}
 		public bool? IsValid { get { return _phone == null ? null : _phone.IsValid; } }
+		public bool? IsConnected { get { return _phone == null ? null : _phone.IsConnected; } }
+
 		public LocationAssociation BestLocationAssociation { get { return _phone == null ? null : _phone.BestLocationAssociation; } }
 		public ILocation BestLocation { get { return _phone == null ? null : _phone.BestLocation; } }
 
