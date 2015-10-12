@@ -303,5 +303,18 @@ namespace ProApiLibrary.Data.Entities
 				_locationAssociations.Add(locationAssociation);
 			}
 		}
+
+		protected void AddPhoneAssociation(PhoneAssociation phoneAssociation)
+		{
+			if (phoneAssociation != null)
+			{
+				if (_phoneAssociations == null)
+				{
+					_phoneAssociations = new List<PhoneAssociation>();
+				}
+				phoneAssociation.ResponseDictionary = this.ResponseDictionary;
+				_phoneAssociations.Add(phoneAssociation);
+			}
+		}
 	}
 }

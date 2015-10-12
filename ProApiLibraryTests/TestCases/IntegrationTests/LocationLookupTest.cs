@@ -38,6 +38,16 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 			Assert.IsTrue(found, "Should find street number in results");
 		}
 
+		[TestMethod]
+		public void ResultShouldContainPhoneNumber()
+		{
+			var found = this.Response.Results.First();
+			var business = found.Businesses.First();
+			var phone = business.Phones.First();
+			var expected = "2065057500";
+			Assert.AreEqual(expected, phone.PhoneNumber, "Phone should be present");
+		}
+
 		protected override Response<ILocation> PerformQuery()
 		{
 			return Client.FindLocations(this.Query);

@@ -173,6 +173,14 @@ namespace ProApiLibrary.Data.Entities
 						{
 							this.AddBusinessAssociation(new BusinessAssociation(e, this.ResponseDictionary));
 						}
+						else if (e.EntityId.IsLocation)
+						{
+							this.AddLocationAssociation(new LocationAssociation(e, this.ResponseDictionary));
+						}
+						else if (e.EntityId.IsPhone)
+						{
+							this.AddPhoneAssociation(new PhoneAssociation(e, this.ResponseDictionary));
+						}
 					}
 				}
 			}

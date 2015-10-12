@@ -17,6 +17,18 @@ namespace ProApiLibrary.Data.Associations
 	[DataContract]
 	public class PhoneAssociation : SerializableAssociation, IContactTyped
 	{
+		internal PhoneAssociation(Association from)
+			: base(from)
+		{
+
+		}
+
+		internal PhoneAssociation(Association from, ResponseDictionary responseDictionary)
+			: base(from, responseDictionary)
+		{
+
+		}
+
 		internal PhoneAssociation()
 		{
 
