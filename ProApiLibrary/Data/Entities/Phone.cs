@@ -62,6 +62,9 @@ namespace ProApiLibrary.Data.Entities
 		[DataMember(Name="is_valid")]
 		public bool? IsValid { get; set; }
 
+		[DataMember(Name="is_connected")]
+		public bool? IsConnected { get; set; }
+
 		[DataMember(Name="best_location_association")]
 		public LocationAssociation BestLocationAssociation
 		{

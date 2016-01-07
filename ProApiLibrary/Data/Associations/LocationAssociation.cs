@@ -17,6 +17,18 @@ namespace ProApiLibrary.Data.Associations
 	[DataContract]
 	public class LocationAssociation : SerializableAssociation, IContactTyped
 	{
+		internal LocationAssociation(Association from)
+			: base(from)
+		{
+
+		}
+
+		internal LocationAssociation(Association from, ResponseDictionary responseDictionary)
+			: base(from, responseDictionary)
+		{
+
+		}
+
 		internal LocationAssociation()
 		{
 			// for deserialization purposes

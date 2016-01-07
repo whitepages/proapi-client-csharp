@@ -25,6 +25,8 @@ namespace ProApiLibrary.Data.Entities
 		bool? DoNotCall { get; }
 		bool? IsPrepaid { get; }
 		bool? IsValid { get; }
+		bool? IsConnected { get; }
+
 		LocationAssociation BestLocationAssociation { get; }
 		ILocation BestLocation { get; }
 

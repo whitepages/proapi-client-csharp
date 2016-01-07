@@ -1,4 +1,6 @@
-﻿namespace ProApiLibrary.Data.Entities
+﻿using System.Runtime.Serialization;
+
+namespace ProApiLibrary.Data.Entities
 {
 	/// <summary>
 	/// The interface for Location <seealso cref="IEntity"/> classes

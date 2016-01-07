@@ -16,6 +16,7 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		private readonly Response<ILocation> _locationResponse = DecodeLocationResponse();
 		private readonly Response<IPhone> _phoneResponse = DecodePhoneResponse();
 		private readonly Response<IPhone> _phoneResponse2 = DecodePhoneResponse2();
+		private readonly Response<IPhone> _phoneResponse3 = DecodePhoneResponse3();
  
 		public Response<IPerson> PersonResponse
 		{
@@ -40,6 +41,11 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		public Response<IPhone> PhoneResponse2
 		{
 			get { return _phoneResponse2; }
+		}
+
+		public Response<IPhone> PhoneResponse3
+		{
+			get { return _phoneResponse3; }
 		}
 
 		private static Response<IPerson> DecodePersonResponse()
@@ -94,6 +100,18 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		private static Response<IPhone> DecodePhoneResponse2()
 		{
 			const string PATH = "ProApiLibraryTests.Resources.JsonResponses.phoneResponse2.json";
+			using (var stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(PATH))
+			{
+				var decoder = new ProApiLibrary.Api.Clients.ResponseDecoders.NewtonsoftStreaming.PhoneResponseDecoder();
+				var response = decoder.Decode(stream, Client);
+				return response;
+
+			}
+		}
+
+		private static Response<IPhone> DecodePhoneResponse3()
+		{
+			const string PATH = "ProApiLibraryTests.Resources.JsonResponses.phoneResponse3.json";
 			using (var stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream(PATH))
 			{
 				var decoder = new ProApiLibrary.Api.Clients.ResponseDecoders.NewtonsoftStreaming.PhoneResponseDecoder();

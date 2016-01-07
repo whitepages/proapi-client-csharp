@@ -137,7 +137,7 @@ namespace ProApiLibrary.Data.Entities
 		[DataMember(Name = "address_type")]
 		public LocationAddressType? AddressType { get; set; }
 
-		[DataMember(Name = "lat_long")]
+		[DataMember(Name = "lat_long", IsRequired=false)]
 		public LatLong LatLong { get; set; }
 
 		[DataMember(Name = "is_deliverable")]
@@ -172,6 +172,14 @@ namespace ProApiLibrary.Data.Entities
 						else if (e.EntityId.IsBusiness)
 						{
 							this.AddBusinessAssociation(new BusinessAssociation(e, this.ResponseDictionary));
+						}
+						else if (e.EntityId.IsLocation)
+						{
+							this.AddLocationAssociation(new LocationAssociation(e, this.ResponseDictionary));
+						}
+						else if (e.EntityId.IsPhone)
+						{
+							this.AddPhoneAssociation(new PhoneAssociation(e, this.ResponseDictionary));
 						}
 					}
 				}

@@ -93,7 +93,7 @@ namespace ExamplesLibrary
 			WriteLine(indent, "Is Prepaid:                  {0}", phone.IsPrepaid.HasValue ? phone.IsPrepaid.Value.ToString() : "null");
 			WriteLine(indent, "Reputation:                  {0}", GetSpamScore(phone));
 			WriteLine(indent, "Is Valid:                    {0}", phone.IsValid);
-
+			WriteLine(indent, "Is Connected:				{0}", phone.IsConnected);
 			BestLocation(phone.BestLocation, depth, indent);
 
 			DumpBaseEntity(phone, depth, indent);
