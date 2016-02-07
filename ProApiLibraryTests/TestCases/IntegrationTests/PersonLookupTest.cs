@@ -50,7 +50,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 			{
 				foreach (var p in response.Results)
 				{
-					System.Console.Out.WriteLine(p.BestName);
+					System.Console.Out.WriteLine(string.Join(", ", p.Names));
 				}
 			}
 		}
@@ -66,7 +66,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 			{
 				foreach (var p in response.Results)
 				{
-					System.Console.Out.WriteLine(p.BestName);
+					System.Console.Out.WriteLine(string.Join(", ", p.Names));
 				}
 			}
 		}

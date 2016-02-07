@@ -18,8 +18,7 @@ namespace ProApiLibrary.Data.Entities
 		IEnumerable<Person.PersonName> Names { get; }
 		AgeRange AgeRange { get; }
 		Gender? Gender { get; }
-		string BestName { get; }
-
+		
 		ILocation BestLocation { get; }
 		LocationAssociation BestLocationAssociation { get; }
 

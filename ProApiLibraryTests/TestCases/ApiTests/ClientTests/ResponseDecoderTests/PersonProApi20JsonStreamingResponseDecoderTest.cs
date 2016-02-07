@@ -40,12 +40,6 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasBestName()
-		{
-			Assert.AreEqual("Janice Smith", _person.BestName);
-		}
-
-		[TestMethod]
 		public void HasNames()
 		{
 			Assert.AreEqual("Janice", _person.Names.First().FirstName);

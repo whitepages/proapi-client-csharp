@@ -32,7 +32,6 @@ namespace ExamplesLibrary
 		{
 			PrintName(person, indent);
 
-			WriteLine(indent, "Best Name:                   {0}", person.BestName);
 			WriteLine(indent, "Names:                       {0}", String.Join(", ", person.Names));
 			WriteLine(indent, "Age Range:                   {0}", person.AgeRange == null ? "null" : person.AgeRange.ToString());
 			WriteLine(indent, "Gender:                      {0}", person.Gender);
