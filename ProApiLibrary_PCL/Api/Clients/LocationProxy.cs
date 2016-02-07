@@ -158,11 +158,6 @@ namespace ProApiLibrary.Api.Clients
 			get { return _location == null ? null : _location.DeliveryPoint; }
 		}
 
-		public Location.LocationBoxType? BoxType
-		{
-			get { return _location == null ? null : _location.BoxType; }
-		}
-
 		public Location.LocationAddressType? AddressType
 		{
 			get { return _location == null ? null : _location.AddressType; }

@@ -108,12 +108,6 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasCorrectHistoricalAssociationAttribute()
-		{
-			Assert.IsTrue(_association.IsHistorical);
-		}
-
-		[TestMethod]
 		public void HasCorrectValidForAssociationAttributes()
 		{
 			Assert.IsNotNull(_association.ValidFor);

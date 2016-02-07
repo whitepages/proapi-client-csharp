@@ -34,7 +34,6 @@ namespace ProApiLibrary.Data.Entities
 		Location.LocationNotReceivingMailReason? NotReceivingMailReason { get; }
 		Location.AddressUsage? Usage { get; }
 		Location.LocationDeliveryPoint? DeliveryPoint { get; }
-		Location.LocationBoxType? BoxType { get; }
 		Location.LocationAddressType? AddressType { get; }
 		LatLong LatLong { get; }
 		bool? IsDeliverable { get; }

@@ -36,8 +36,8 @@ namespace ProApiLibrary.Data.Associations
 		}
 
 		public PersonAssociation(EntityId entityId, ResponseDictionary responseDictionary, TimePeriod validFor,
-								   bool isHistorical, DateTime? contactCreationDate)
-			: base(entityId, responseDictionary, validFor, isHistorical, contactCreationDate)
+								   DateTime? contactCreationDate)
+			: base(entityId, responseDictionary, validFor, false, contactCreationDate)
 		{
 
 		}

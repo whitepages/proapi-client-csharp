@@ -60,17 +60,6 @@ namespace ProApiLibrary.Data.Entities
 			SingleUnit
 		}
 
-		public enum LocationBoxType
-		{
-			Facility,
-			Contest,
-			Detached,
-			NonPersonnelUnit,
-			School,
-			Remittance,
-			CallerService
-		}
-
 		public Location()
 		{
 
@@ -145,10 +134,7 @@ namespace ProApiLibrary.Data.Entities
 
 		[DataMember(Name = "delivery_point")]
 		public LocationDeliveryPoint? DeliveryPoint { get; set; }
-
-		[DataMember(Name = "box_type")]
-		public LocationBoxType? BoxType { get; set; }
-
+		
 		public override string Name
 		{
 			get { return this.Address; }
