@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
 
 namespace ProApiLibrary.Data.Entities
 {
@@ -24,11 +23,10 @@ namespace ProApiLibrary.Data.Entities
 			Phone,
 		}
 
-		public EntityId(EntityType type, Guid guid, Durability durability)
+		public EntityId(EntityType type, Guid guid)
 		{
 			this.Type = type;
 			this.Guid = guid;
-			this.Durability = durability;
 		}
 
 		[DataMember(Name = "key")]
@@ -39,10 +37,7 @@ namespace ProApiLibrary.Data.Entities
 
 		[DataMember(Name = "uuid")]
 		public Guid Guid { get; set; }
-
-		[DataMember(Name = "durability")]
-		public Durability Durability { get; set; }
-
+		
 		public static EntityId FromString(string key)
 		{
 			var pieces = key.Split(new[] { '.' });
@@ -52,9 +47,8 @@ namespace ProApiLibrary.Data.Entities
 			}
 			var entityType = (EntityType)Enum.Parse(typeof(EntityType), pieces[0], true);
 			var guid = new Guid(pieces[1]);
-			var durability = (Durability)Enum.Parse(typeof(Durability), pieces[2], true);
-
-			return new EntityId(entityType, guid, durability)
+		
+			return new EntityId(entityType, guid)
 				{
 					Key = key
 				};
@@ -134,7 +128,7 @@ namespace ProApiLibrary.Data.Entities
 
 		public override string ToString()
 		{
-			return String.Format("{0}.{1}.{2}", this.Type, this.Guid, this.Durability);
+			return String.Format("{0}.{1}", this.Type, this.Guid);
 		}
 
 		public bool IsPerson

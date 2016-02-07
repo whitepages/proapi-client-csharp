@@ -110,7 +110,6 @@
     <Compile Include="Data\Entities\BaseEntity.cs" />
     <Compile Include="Data\Entities\Business.cs" />
     <Compile Include="Data\Entities\Date.cs" />
-    <Compile Include="Data\Entities\Durability.cs" />
     <Compile Include="Data\Entities\EntityId.cs" />
     <Compile Include="Data\Entities\EntityProxy.cs" />
     <Compile Include="Data\Entities\Error.cs" />

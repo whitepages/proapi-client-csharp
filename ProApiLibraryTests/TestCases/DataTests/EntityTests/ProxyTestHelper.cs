@@ -16,14 +16,12 @@ namespace ProApiLibraryTests.TestCases.DataTests.EntityTests
 	{
 		private readonly static string _apiKey = "mockapikey";
 
-		public static readonly EntityId PersonId = new EntityId(EntityId.EntityType.Person, Guid.NewGuid(), Durability.Durable);
+		public static readonly EntityId PersonId = new EntityId(EntityId.EntityType.Person, Guid.NewGuid());
 
-		public static readonly EntityId BusinessId = new EntityId(EntityId.EntityType.Business, Guid.NewGuid(),
-		                                                          Durability.Durable);
-		public static readonly EntityId LocationId = new EntityId(EntityId.EntityType.Location, Guid.NewGuid(),
-		                                                          Durability.Durable);
+		public static readonly EntityId BusinessId = new EntityId(EntityId.EntityType.Business, Guid.NewGuid());
+		public static readonly EntityId LocationId = new EntityId(EntityId.EntityType.Location, Guid.NewGuid());
 
-		public static readonly EntityId PhoneId = new EntityId(EntityId.EntityType.Phone, Guid.NewGuid(), Durability.Durable);
+		public static readonly EntityId PhoneId = new EntityId(EntityId.EntityType.Phone, Guid.NewGuid());
 
 
 		private readonly static IPerson _person;

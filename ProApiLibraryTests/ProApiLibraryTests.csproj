@@ -71,7 +71,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCases\IntegrationTests\BusinessLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\ErrorResponseTest.cs" />
-    <Compile Include="TestCases\IntegrationTests\NonDurableEntityIdLookupErrorTest.cs" />
     <Compile Include="TestCases\IntegrationTests\PhoneLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\LocationLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\EntityLookupTest.cs" />
