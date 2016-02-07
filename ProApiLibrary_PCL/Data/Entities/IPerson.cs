@@ -19,8 +19,5 @@ namespace ProApiLibrary.Data.Entities
 		AgeRange AgeRange { get; }
 		Gender? Gender { get; }
 		
-		ILocation BestLocation { get; }
-		LocationAssociation BestLocationAssociation { get; }
-
 	}
 }

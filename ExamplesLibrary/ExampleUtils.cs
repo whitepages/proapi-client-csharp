@@ -36,8 +36,6 @@ namespace ExamplesLibrary
 			WriteLine(indent, "Age Range:                   {0}", person.AgeRange == null ? "null" : person.AgeRange.ToString());
 			WriteLine(indent, "Gender:                      {0}", person.Gender);
 			
-			BestLocation(person.BestLocation, depth, indent);
-
 			DumpBaseEntity(person, depth, indent);
 		}
 

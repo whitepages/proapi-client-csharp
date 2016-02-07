@@ -90,9 +90,12 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasBestLocationAssociation()
+		public void HasLocationAssociation()
 		{
-			Assert.AreEqual(EntityId.FromString("Location.b934db51-65ac-4aec-a72e-7399f853a775.Durable"), _person.BestLocationAssociation.EntityId);
+			var entityId = EntityId.FromString("Location.b934db51-65ac-4aec-a72e-7399f853a775.Durable");
+			var location = _person.LocationAssociations.FirstOrDefault(x => x.EntityId.Equals(entityId));
+
+			Assert.IsNotNull(location, "Should have found the location association");
 		}
 
 		[TestMethod]
@@ -133,8 +136,8 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 					Assert.AreEqual("044c0332-c869-4cd3-b957-7e5c9b4e0426", legalEntityPerson.Id.Guid.ToString());
 				}
 			}
-			var bestLocation = person.BestLocation;
-			var person2 = bestLocation.People.First();
+			var firstLocation = person.Locations.First();
+			var person2 = firstLocation.People.First();
 			Assert.AreEqual("1dda652c-6de9-4949-9d1a-b47b203136da", person2.Id.Guid.ToString());
 		}
 	}

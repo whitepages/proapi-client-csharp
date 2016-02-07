@@ -61,10 +61,6 @@ namespace ProApiLibrary.Api.Clients.ResponseDecoders.NewtonsoftStreaming
 					{
 						a.ResponseDictionary = dict;
 					}
-					if (p.BestLocationAssociation != null)
-					{
-						p.BestLocationAssociation.ResponseDictionary = dict;
-					}
 				}
 
 				var response = new Response<IPerson>(client, list, dict, messages);
