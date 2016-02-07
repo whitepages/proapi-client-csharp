@@ -35,9 +35,9 @@ namespace ProApiLibrary.Data.Associations
 
 		}
 
-		public PersonAssociation(EntityId entityId, ResponseDictionary responseDictionary, TimePeriod validFor,
+		public PersonAssociation(EntityId entityId, ResponseDictionary responseDictionary,
 								   DateTime? contactCreationDate)
-			: base(entityId, responseDictionary, validFor, false, contactCreationDate)
+			: base(entityId, responseDictionary, contactCreationDate)
 		{
 
 		}

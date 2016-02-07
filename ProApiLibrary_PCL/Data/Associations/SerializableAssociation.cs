@@ -39,6 +39,12 @@ namespace ProApiLibrary.Data.Associations
 			
 		}
 
+		protected SerializableAssociation(EntityId entityId, ResponseDictionary responseDictionary, DateTime? contactCreationDate)
+			: base(entityId, responseDictionary, contactCreationDate)
+		{
+
+		}
+
 		public override IEntity Entity
 		{
 			get { return null; }

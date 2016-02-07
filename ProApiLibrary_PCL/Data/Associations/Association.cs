@@ -75,6 +75,16 @@ namespace ProApiLibrary.Data.Associations
 			ValidateEntityIdType();
 		}
 
+		protected Association(EntityId entityId, ResponseDictionary responseDictionary,
+							  DateTime? contactCreationDate)
+		{
+			EntityId = entityId;
+			_responseDictionary = responseDictionary;
+			ContactCreationDate = contactCreationDate;
+
+			ValidateEntityIdType();
+		}
+
 		[DataMember(Name = "id")]
 		public EntityId EntityId { get; set; }
 
