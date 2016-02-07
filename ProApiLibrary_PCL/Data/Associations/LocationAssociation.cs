@@ -15,7 +15,7 @@ namespace ProApiLibrary.Data.Associations
 	/// <seealso cref="Association"/>
 	/// </remarks>
 	[DataContract]
-	public class LocationAssociation : SerializableAssociation, IContactTyped
+	public class LocationAssociation : SerializableAssociation
 	{
 		internal LocationAssociation(Association from)
 			: base(from)
@@ -41,14 +41,11 @@ namespace ProApiLibrary.Data.Associations
 		}
 
 		protected LocationAssociation(EntityId entityId, ResponseDictionary responseDictionary, TimePeriod validFor,
-										 bool isHistorical, DateTime? contactCreationDate, ContactType contactType)
+										 bool isHistorical, DateTime? contactCreationDate)
 			: base(entityId, responseDictionary, validFor, isHistorical, contactCreationDate)
 		{
-			this.ContactType = contactType;
+			
 		}
-
-		[DataMember(Name = "contact_type")]
-		public ContactType? ContactType { get; set; }
 
 		public override IEntity Entity
 		{

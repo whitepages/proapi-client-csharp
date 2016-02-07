@@ -114,12 +114,6 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasCorrectContactTypeHistoricalAttributeTest()
-		{
-			Assert.AreEqual(ContactType.Home, _association.ContactType);
-		}
-
-		[TestMethod]
 		public void HasCorrectValidForAssociationAttributes()
 		{
 			Assert.IsNotNull(_association.ValidFor);

@@ -15,7 +15,7 @@ namespace ProApiLibrary.Data.Associations
 	/// <seealso cref="Association"/>
 	/// </remarks>
 	[DataContract]
-	public class PhoneAssociation : SerializableAssociation, IContactTyped
+	public class PhoneAssociation : SerializableAssociation
 	{
 		internal PhoneAssociation(Association from)
 			: base(from)
@@ -41,13 +41,11 @@ namespace ProApiLibrary.Data.Associations
 		}
 
 		public PhoneAssociation(EntityId entityId, ResponseDictionary responseDictionary, TimePeriod validFor,
-								   bool isHistorical, DateTime? contactCreationDate, ContactType contactType)
+								   bool isHistorical, DateTime? contactCreationDate)
 			: base(entityId, responseDictionary, validFor, isHistorical, contactCreationDate)
 		{
-			this.ContactType = contactType;
+			
 		}
-
-		public ContactType? ContactType { get; set; }
 
 		public IPhone Phone
 		{

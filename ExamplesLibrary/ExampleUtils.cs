@@ -197,14 +197,12 @@ namespace ExamplesLibrary
 
 		private static void DumpLocationAssociation(LocationAssociation association, int depth, int indent)
 		{
-			WriteLine(indent, "Contact Type:                {0}", association.ContactType.HasValue ? association.ContactType.Value.ToString() : "null");
 			WriteLine(indent, "Location:");
 			DumpLocation(association.Location, depth, indent + DefaultIndent);
 		}
 
 		private static void DumpPhoneAssociation(PhoneAssociation association, int depth, int indent)
 		{
-			WriteLine(indent, "Contact Type:                {0}", association.ContactType.HasValue ? association.ContactType.Value.ToString() : "null");
 			WriteLine(indent, "Phone:");
 			DumpPhone(association.Phone, depth, indent + DefaultIndent);
 

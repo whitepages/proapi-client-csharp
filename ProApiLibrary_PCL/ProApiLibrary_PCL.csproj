@@ -100,7 +100,6 @@
     <Compile Include="Api\Responses\ResponseMessages.cs" />
     <Compile Include="Data\Associations\Association.cs" />
     <Compile Include="Data\Associations\BusinessAssociation.cs" />
-    <Compile Include="Data\Associations\IContactTyped.cs" />
     <Compile Include="Data\Associations\LegalEntityAssociation.cs" />
     <Compile Include="Data\Associations\LocationAssociation.cs" />
     <Compile Include="Data\Associations\PersonAssociation.cs" />
