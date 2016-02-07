@@ -44,7 +44,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 			var found = this.Response.Results.First();
 			var business = found.Businesses.First();
 			var phone = business.Phones.First();
-			var expected = "2065057500";
+			var expected = "2065735140";
 			Assert.AreEqual(expected, phone.PhoneNumber, "Phone should be present");
 		}
 
