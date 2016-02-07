@@ -113,9 +113,7 @@ namespace ProApiLibrary.Data.Entities
 			public string LastName { get; set; }
 			[DataMember(Name = "suffix")]
 			public string Suffix { get; set; }
-			[DataMember(Name = "valid_for")]
-			public TimePeriod ValidFor { get; set; }
-
+			
 			public override string ToString()
 			{
 				return String.Format("[Name{{salutation={0}, firstName='{1}', middleName='{2}', lastName='{3}', suffix='{4}'}}]", 
