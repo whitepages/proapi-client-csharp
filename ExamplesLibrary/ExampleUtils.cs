@@ -90,8 +90,7 @@ namespace ExamplesLibrary
 			WriteLine(indent, "Reputation:                  {0}", GetSpamScore(phone));
 			WriteLine(indent, "Is Valid:                    {0}", phone.IsValid);
 			WriteLine(indent, "Is Connected:				{0}", phone.IsConnected);
-			BestLocation(phone.BestLocation, depth, indent);
-
+	
 			DumpBaseEntity(phone, depth, indent);
 			
 		}
@@ -101,14 +100,6 @@ namespace ExamplesLibrary
 		private static int? GetSpamScore(IPhone phone)
 		{
 			return Phone.GetSpamScore(phone.Reputation);
-		}
-
-		private static void BestLocation(ILocation location, int depth, int indent)
-		{
-			if (depth > 1 && location != null)
-			{
-				WriteLine(indent, "Best Location:               {0}", location.Name);
-			}
 		}
 
 		#endregion

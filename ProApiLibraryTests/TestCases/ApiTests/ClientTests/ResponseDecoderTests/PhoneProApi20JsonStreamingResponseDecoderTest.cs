@@ -84,9 +84,11 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasBestLocationAssociation()
+		public void HasExpectedLocationAssociation()
 		{
-			Assert.AreEqual(EntityId.FromString("Location.f680d715-f932-4e68-9e64-9871113a6b81.Durable"), _phone.BestLocationAssociation.EntityId);
+			var entityId = EntityId.FromString("Location.f680d715-f932-4e68-9e64-9871113a6b81.Durable");
+			var exists = _phone.LocationAssociations.Any(x => x.EntityId.Equals(entityId));
+			Assert.IsTrue(exists, "Should have found a location association");
 		}
 
 		[TestMethod]
@@ -119,7 +121,7 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		[TestMethod]
 		public void NullLatLongIsHandled()
 		{
-			Assert.IsNull(_phone3.BestLocation.LatLong);
+			Assert.IsNull(_phone3.Locations.First().LatLong);
 		}
 	}
 }

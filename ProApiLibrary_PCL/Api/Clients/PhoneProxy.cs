@@ -50,11 +50,6 @@ namespace ProApiLibrary.Api.Clients
 		public bool? IsValid { get { return _phone == null ? null : _phone.IsValid; } }
 		public bool? IsConnected { get { return _phone == null ? null : _phone.IsConnected; } }
 
-		public LocationAssociation BestLocationAssociation { get { return _phone == null ? null : _phone.BestLocationAssociation; } }
-		public ILocation BestLocation { get { return _phone == null ? null : _phone.BestLocation; } }
-
-		
-
 	}
 
 

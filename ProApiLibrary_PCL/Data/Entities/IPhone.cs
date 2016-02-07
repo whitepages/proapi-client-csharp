@@ -27,8 +27,5 @@ namespace ProApiLibrary.Data.Entities
 		bool? IsValid { get; }
 		bool? IsConnected { get; }
 
-		LocationAssociation BestLocationAssociation { get; }
-		ILocation BestLocation { get; }
-
 	}
 }
