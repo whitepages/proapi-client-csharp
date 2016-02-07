@@ -43,11 +43,6 @@ namespace ProApiLibrary.Api.Clients
 			get { return _location == null ? null : _location.Type; }
 		}
 
-		public string Address
-		{
-			get { return _location == null ? null : _location.Address; }
-		}
-
 		public string StandardAddressLine1
 		{
 			get { return _location == null ? null : _location.StandardAddressLine1; }
@@ -56,11 +51,6 @@ namespace ProApiLibrary.Api.Clients
 		public string StandardAddressLine2
 		{
 			get { return _location == null ? null : _location.StandardAddressLine2; }
-		}
-
-		public string StandardAddressLocation
-		{
-			get { return _location == null ? null : _location.StandardAddressLocation; }
 		}
 
 		public string City
@@ -83,49 +73,9 @@ namespace ProApiLibrary.Api.Clients
 			get { return _location == null ? null : _location.CountryCode; }
 		}
 
-		public string AptType
-		{
-			get { return _location == null ? null : _location.AptType; }
-		}
-
 		public string Zip4
 		{
 			get { return _location == null ? null : _location.Zip4; }
-		}
-
-		public string House
-		{
-			get { return _location == null ? null : _location.House; }
-		}
-
-		public string StreetName
-		{
-			get { return _location == null ? null : _location.StreetName; }
-		}
-
-		public string StreetType
-		{
-			get { return _location == null ? null : _location.StreetType; }
-		}
-
-		public string PreDir
-		{
-			get { return _location == null ? null : _location.PreDir; }
-		}
-
-		public string PostDir
-		{
-			get { return _location == null ? null : _location.PostDir; }
-		}
-
-		public string AptNumber
-		{
-			get { return _location == null ? null : _location.AptNumber; }
-		}
-
-		public string BoxNumber
-		{
-			get { return _location == null ? null : _location.BoxNumber; }
 		}
 
 		public TimePeriod ValidFor

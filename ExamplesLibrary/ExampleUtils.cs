@@ -48,28 +48,18 @@ namespace ExamplesLibrary
 		public static void DumpLocation(ILocation location, int depth, int indent = 0)
 		{
 			PrintName(location, indent);
-			WriteLine(indent, "Address:                     {0}", location.Address);
-
 			WriteLine(indent, "Address Type:                {0}", location.AddressType.HasValue ? location.AddressType.Value.ToString() : "null");
-			WriteLine(indent, "Apartment Number:            {0}", String.IsNullOrWhiteSpace(location.AptNumber) ? "null" : location.AptNumber);
-			WriteLine(indent, "Box Number:                  {0}", String.IsNullOrWhiteSpace(location.BoxNumber) ? "null" : location.BoxNumber);
 			WriteLine(indent, "City:                        {0}", location.City);
 			WriteLine(indent, "CountryCode:                 {0}", location.CountryCode);
 			WriteLine(indent, "Deliverable:                 {0}", location.IsDeliverable.HasValue ? location.IsDeliverable.Value.ToString() : "null");
 			WriteLine(indent, "Delivery Point:              {0}", location.DeliveryPoint.HasValue ? location.DeliveryPoint.Value.ToString() : "null");
-			WriteLine(indent, "House:                       {0}", String.IsNullOrWhiteSpace(location.House) ? "null" : location.House);
 			WriteLine(indent, "Latitude/Longitude:          {0}", location.LatLong);
 			WriteLine(indent, "Not Receiving Mail Reason:   {0}", location.NotReceivingMailReason.HasValue ? location.NotReceivingMailReason.Value.ToString() : "null");
 			WriteLine(indent, "Postal Code:                 {0}", location.PostalCode);
-			WriteLine(indent, "Post Directional:            {0}", String.IsNullOrWhiteSpace(location.PostDir) ? "null" : location.PostDir);
-			WriteLine(indent, "Pre Directional:             {0}", String.IsNullOrWhiteSpace(location.PreDir) ? "null" : location.PreDir);
 			WriteLine(indent, "Receiving Mail:              {0}", location.IsReceivingMail.HasValue ? location.IsReceivingMail.Value.ToString() : "null");
 			WriteLine(indent, "Standard Address Line1:      {0}", location.StandardAddressLine1);
 			WriteLine(indent, "Standard Address Line2:      {0}", location.StandardAddressLine2);
-			WriteLine(indent, "Standard Address Location:   {0}", location.StandardAddressLocation);
 			WriteLine(indent, "State Code:                  {0}", location.StateCode);
-			WriteLine(indent, "Street Name:                 {0}", String.IsNullOrWhiteSpace(location.StreetName) ? "null" : location.StreetName);
-			WriteLine(indent, "Street Type:                 {0}", String.IsNullOrWhiteSpace(location.StreetType) ? "null" : location.StreetType);
 			WriteLine(indent, "Usage:                       {0}", location.Usage.HasValue ? location.Usage.Value.ToString() : "null");
 			WriteLine(indent, "ValidFor:                    {0}", location.ValidFor == null ? "null" : location.ValidFor.ToString());
 			WriteLine(indent, "Zip4:                        {0}", String.IsNullOrWhiteSpace(location.Zip4) ? "null" : location.Zip4);

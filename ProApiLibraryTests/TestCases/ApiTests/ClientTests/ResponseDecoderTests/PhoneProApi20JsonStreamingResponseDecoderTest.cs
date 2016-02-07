@@ -86,7 +86,7 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		[TestMethod]
 		public void HasExpectedLocationAssociation()
 		{
-			var entityId = EntityId.FromString("Location.f680d715-f932-4e68-9e64-9871113a6b81.Durable");
+			var entityId = EntityId.FromString("Location.0a48926c-b02c-468e-ba80-18cc77dfa3fc.Durable");
 			var exists = _phone.LocationAssociations.Any(x => x.EntityId.Equals(entityId));
 			Assert.IsTrue(exists, "Should have found a location association");
 		}
