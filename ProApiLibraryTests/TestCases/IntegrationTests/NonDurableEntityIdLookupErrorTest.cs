@@ -22,7 +22,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 		[TestMethod]
 		public void ItShouldHaveAppropriateErrorMessage()
 		{
-			var messages = Response.ResponseMessages.GetMessageList(Message.MessageSeverity.Error).ToList();
+			var messages = Response.ResponseMessages.Where(x=>x.Severity == Message.MessageSeverity.Error).ToList();
 			Assert.IsTrue(messages.Any(), "Should have one or more error messages");
 
 			var expectedTypeFound = false;

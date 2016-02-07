@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 using ProApiLibrary.Api.Responses;
 
 namespace ProApiLibrary.Data.Messages
@@ -59,11 +60,11 @@ namespace ProApiLibrary.Data.Messages
 			MissingData
 		}
 
-		private readonly MessageSeverity _severity;
-		private readonly MessageType _messageType;
-		private readonly MessageCode? _code;
-		private readonly string _text;
-		private readonly Dictionary<string, object> _ancillaryData;
+		private MessageSeverity _severity;
+		private MessageType _messageType;
+		private MessageCode? _code;
+		private string _text;
+		private Dictionary<string, object> _ancillaryData;
 
 		internal Message()
 		{
@@ -89,23 +90,29 @@ namespace ProApiLibrary.Data.Messages
 		public MessageSeverity Severity
 		{
 			get { return _severity; }
+			set { _severity = value; }
 		}
 
 		public MessageType Type
 		{
 			get { return _messageType; }
+			set { _messageType = value; }
 		}
 
 		public MessageCode? Code
 		{
 			get { return _code; }
+			set { _code = value; }
 		}
 
+		[DataMember(Name="message")]
 		public string Text
 		{
 			get { return _text; }
+			set { _text = value; }
 		}
 
+		[DataMember(Name="ancillary_data")]
 		public Dictionary<string, object> AncillaryData
 		{
 			get { return _ancillaryData; }

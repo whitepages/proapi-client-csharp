@@ -31,7 +31,7 @@ namespace ProApiLibraryTests.TestCases.DataTests.EntityTests
 		private readonly static ILocation _location;
 		private readonly static IPhone _phone;
 
-		private readonly static ResponseMessages _emptyMessages = new ResponseMessages(new List<Message>());
+		private readonly static IEnumerable<Message> _emptyMessages = new List<Message>(new List<Message>());
 
 		static ProxyTestHelper()
 		{

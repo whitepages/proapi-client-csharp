@@ -6,6 +6,7 @@
 *.exe
 *.user
 */bin/*
+.DS_Store
 
 # Double-check we don't commit these, as they can have dev private configs.
 *.vshost.exe.config

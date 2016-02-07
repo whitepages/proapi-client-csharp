@@ -29,7 +29,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 		[TestMethod]
 		public void ResultShouldHaveNoErrorMessage()
 		{
-			Assert.IsFalse(this.Response.ResponseMessages.GetMessageList(Message.MessageSeverity.Error).Any(), "Should have no Error Messages");
+			Assert.IsFalse(this.Response.ResponseMessages.Any(x=>x.Severity == Message.MessageSeverity.Error), "Should have no Error Messages");
 		}
 
 		[TestMethod]
@@ -46,6 +46,22 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 			var personQuery = new PersonQuery("Rory", null, "Williams", null, "WA", null);
 			var response = client.FindPeople(personQuery);
 			
+			if (response != null && response.IsSuccess)
+			{
+				foreach (var p in response.Results)
+				{
+					System.Console.Out.WriteLine(p.BestName);
+				}
+			}
+		}
+
+		[TestMethod]
+		public void KushalExample()
+		{
+			var client = new Client(ClientIntegrationTestHelper.ApiKey);
+			var personQuery = new PersonQuery("Kushal", null, "Shah", null, null, "98006");
+			var response = client.FindPeople(personQuery);
+
 			if (response != null && response.IsSuccess)
 			{
 				foreach (var p in response.Results)
