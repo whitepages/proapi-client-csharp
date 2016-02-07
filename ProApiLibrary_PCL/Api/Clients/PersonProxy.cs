@@ -47,11 +47,6 @@ namespace ProApiLibrary.Api.Clients
 			}
 		}
 
-		public PersonType? Type
-		{
-			get { return _person == null ? null : _person.Type; }
-		}
-
 		public IEnumerable<Person.PersonName> Names { get; set; }
 		public AgeRange AgeRange { get; set; }
 		public Gender? Gender { get; set; }

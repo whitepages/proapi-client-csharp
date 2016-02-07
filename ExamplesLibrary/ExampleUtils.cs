@@ -36,8 +36,7 @@ namespace ExamplesLibrary
 			WriteLine(indent, "Names:                       {0}", String.Join(", ", person.Names));
 			WriteLine(indent, "Age Range:                   {0}", person.AgeRange == null ? "null" : person.AgeRange.ToString());
 			WriteLine(indent, "Gender:                      {0}", person.Gender);
-			WriteLine(indent, "Type:                        {0}", person.Type);
-
+			
 			BestLocation(person.BestLocation, depth, indent);
 
 			DumpBaseEntity(person, depth, indent);

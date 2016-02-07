@@ -15,7 +15,6 @@ namespace ProApiLibrary.Data.Entities
 	/// </remarks>
 	public interface IPerson : ILegalEntity
 	{
-		PersonType? Type { get; }
 		IEnumerable<Person.PersonName> Names { get; }
 		AgeRange AgeRange { get; }
 		Gender? Gender { get; }

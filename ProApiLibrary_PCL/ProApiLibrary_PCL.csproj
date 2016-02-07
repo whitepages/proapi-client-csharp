@@ -126,7 +126,6 @@
     <Compile Include="Data\Entities\Location.cs" />
     <Compile Include="Data\Entities\Name.cs" />
     <Compile Include="Data\Entities\Person.cs" />
-    <Compile Include="Data\Entities\PersonType.cs" />
     <Compile Include="Data\Entities\Phone.cs" />
     <Compile Include="Data\Entities\Reputation.cs" />
     <Compile Include="Data\Entities\ReputationDetails.cs" />

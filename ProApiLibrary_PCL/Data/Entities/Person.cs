@@ -39,8 +39,6 @@ namespace ProApiLibrary.Data.Entities
 			set { _name = value; }
 		}
 
-		[DataMember(Name = "type")]
-		public PersonType? Type { get; set; }
 		[DataMember(Name = "names")]
 		public IEnumerable<PersonName> Names { get; set; }
 		[DataMember(Name = "age_range")]
