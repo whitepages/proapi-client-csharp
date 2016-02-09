@@ -61,6 +61,9 @@ namespace ProApiLibrary.Data.Associations
 		{
 			get { return EntityId.EntityType.Phone; }
 		}
+		
+		public new bool IsHistorical { get; set; }
 
+		public new TimePeriod ValidFor { get; set; }
 	}
 }

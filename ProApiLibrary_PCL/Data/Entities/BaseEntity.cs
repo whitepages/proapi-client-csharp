@@ -254,7 +254,7 @@ namespace ProApiLibrary.Data.Entities
 
 		public override string ToString()
 		{
-			return String.Format("{0}: {1}", this.Id.Type, this.Id.Key);
+			return String.Format("{0}", this.Id.Key);
 		}
 
 		private static void AddAllIfNotNull<T1, T2>(List<T1> coll, IEnumerable<T2> c) where T2 : T1

@@ -56,5 +56,6 @@ namespace ProApiLibrary.Data.Associations
 		{
 			get { return EntityId.EntityType.Person; }
 		}
+
 	}
 }

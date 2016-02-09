@@ -61,5 +61,10 @@ namespace ProApiLibrary.Data.Associations
 		{
 			get { return this.ResponseDictionary.GetLocation(this.EntityId); }
 		}
+
+
+		public new bool IsHistorical { get; set; }
+
+		public new TimePeriod ValidFor { get; set; }
 	}
 }

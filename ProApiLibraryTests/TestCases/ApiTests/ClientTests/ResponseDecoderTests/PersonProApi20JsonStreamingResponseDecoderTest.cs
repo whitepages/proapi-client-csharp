@@ -105,14 +105,6 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasCorrectValidForAssociationAttributes()
-		{
-			Assert.IsNotNull(_association.ValidFor);
-			Assert.AreEqual(new Date(1990, 7, 1), _association.ValidFor.Start);
-			Assert.AreEqual(new Date(1990, 12, 1), _association.ValidFor.Stop);
-		}
-
-		[TestMethod]
 		public void HasCorrectContactCreationDateAssociationAttributes()
 		{
 			const long TIME_IN_SEC = 1366924661L;

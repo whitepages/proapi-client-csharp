@@ -44,5 +44,10 @@ namespace ProApiLibrary.Data.Associations
 		{
 
 		}
+
+
+		public new bool IsHistorical { get; set; }
+
+		public new TimePeriod ValidFor { get; set; }
 	}
 }

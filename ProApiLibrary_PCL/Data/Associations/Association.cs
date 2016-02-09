@@ -111,10 +111,10 @@ namespace ProApiLibrary.Data.Associations
 		public abstract EntityId.EntityType? EntityIdType { get; }
 
 		[DataMember(Name = "valid_for")]
-		public TimePeriod ValidFor { get; set; }
+		protected internal TimePeriod ValidFor { get; set; }
 
 		[DataMember(Name = "is_historical")]
-		public bool IsHistorical { get; set; }
+		protected internal bool IsHistorical { get; set; }
 
 		[DataMember(Name = "contact_creation_date")]
 		internal long? ContactCreationDateSeconds
