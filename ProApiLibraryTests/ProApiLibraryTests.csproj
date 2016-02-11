@@ -71,19 +71,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCases\IntegrationTests\BusinessLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\ErrorResponseTest.cs" />
-    <Compile Include="TestCases\IntegrationTests\NonDurableEntityIdLookupErrorTest.cs" />
     <Compile Include="TestCases\IntegrationTests\PhoneLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\LocationLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\EntityLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\LookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\PersonLookupTest.cs" />
     <Compile Include="TestCases\IntegrationTests\ResponseExceptionTest.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProApiLibrary\ProApiLibrary.csproj">
-      <Project>{7e8299ee-4474-41b1-bd22-63ead8bcc5a4}</Project>
-      <Name>ProApiLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -98,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProApiLibrary_PCL\ProApiLibrary_PCL.csproj">
+      <Project>{13aa2dbd-5caa-4534-9322-9097b75049c4}</Project>
+      <Name>ProApiLibrary_PCL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ProApiLibrary.Api.Clients;
 using ProApiLibrary.Api.Queries;
 using ProApiLibrary.Api.Responses;
 using ProApiLibrary.Data.Entities;
@@ -28,7 +29,21 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 		[TestMethod]
 		public void ResultShouldHaveNoErrorMessage()
 		{
-			Assert.IsFalse(this.Response.ResponseMessages.GetMessageList(Message.MessageSeverity.Error).Any(), "Should have no Error Messages");
+			Assert.IsFalse(this.Response.ResponseMessages.Any(x=>x.Severity == Message.MessageSeverity.Error), "Should have no Error Messages");
+		}
+
+		[TestMethod]
+		public void WeCaptureInvalidAreaCodeMessage()
+		{
+			var query = new PhoneQuery("9991117799");
+			var client = new Client(ClientIntegrationTestHelper.ApiKey);
+			var response = client.FindPhones(query);
+			var messages = response.ResponseMessages.ToList();
+			Assert.AreEqual(1, messages.Count, "Should have 1 message");
+			var message = messages.First();
+			var text = message.Text;
+			var expected = "qiWithPhone: invalid area code";
+			Assert.AreEqual(expected, text, "Incorrect message text");
 		}
 
 		[TestMethod]

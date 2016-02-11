@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProApiLibrary", "ProApiLibrary\ProApiLibrary.csproj", "{7E8299EE-4474-41B1-BD22-63EAD8BCC5A4}"
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindBusiness", "FindBusiness\FindBusiness.csproj", "{B8AC5A6E-0B19-4728-B538-B88BCFC21843}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindPerson", "FindPerson\FindPerson.csproj", "{79BCB968-DC52-4159-AE5B-61424147136F}"
@@ -21,16 +21,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{468544
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProApiLibrary_PCL", "ProApiLibrary_PCL\ProApiLibrary_PCL.csproj", "{13AA2DBD-5CAA-4534-9322-9097B75049C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7E8299EE-4474-41B1-BD22-63EAD8BCC5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E8299EE-4474-41B1-BD22-63EAD8BCC5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E8299EE-4474-41B1-BD22-63EAD8BCC5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E8299EE-4474-41B1-BD22-63EAD8BCC5A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8AC5A6E-0B19-4728-B538-B88BCFC21843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8AC5A6E-0B19-4728-B538-B88BCFC21843}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8AC5A6E-0B19-4728-B538-B88BCFC21843}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,6 +53,10 @@ Global
 		{1AC14389-8B27-4872-80E6-728B5951FE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AC14389-8B27-4872-80E6-728B5951FE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AC14389-8B27-4872-80E6-728B5951FE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AA2DBD-5CAA-4534-9322-9097B75049C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AA2DBD-5CAA-4534-9322-9097B75049C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AA2DBD-5CAA-4534-9322-9097B75049C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AA2DBD-5CAA-4534-9322-9097B75049C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

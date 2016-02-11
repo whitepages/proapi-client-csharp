@@ -40,12 +40,6 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasBestName()
-		{
-			Assert.AreEqual("Janice Smith", _person.BestName);
-		}
-
-		[TestMethod]
 		public void HasNames()
 		{
 			Assert.AreEqual("Janice", _person.Names.First().FirstName);
@@ -96,35 +90,18 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		}
 
 		[TestMethod]
-		public void HasBestLocationAssociation()
+		public void HasLocationAssociation()
 		{
-			Assert.AreEqual(EntityId.FromString("Location.b934db51-65ac-4aec-a72e-7399f853a775.Durable"), _person.BestLocationAssociation.EntityId);
+			var entityId = EntityId.FromString("Location.b934db51-65ac-4aec-a72e-7399f853a775.Durable");
+			var location = _person.LocationAssociations.FirstOrDefault(x => x.EntityId.Equals(entityId));
+
+			Assert.IsNotNull(location, "Should have found the location association");
 		}
 
 		[TestMethod]
 		public void HasExpectedHistoricalAssociationForAttributeTests()
 		{
 			Assert.AreEqual(EntityId.FromString("Location.b934db51-65ac-4aec-a72e-7399f853a775.Durable"), _association.EntityId);
-		}
-
-		[TestMethod]
-		public void HasCorrectHistoricalAssociationAttribute()
-		{
-			Assert.IsTrue(_association.IsHistorical);
-		}
-
-		[TestMethod]
-		public void HasCorrectContactTypeHistoricalAttributeTest()
-		{
-			Assert.AreEqual(ContactType.Home, _association.ContactType);
-		}
-
-		[TestMethod]
-		public void HasCorrectValidForAssociationAttributes()
-		{
-			Assert.IsNotNull(_association.ValidFor);
-			Assert.AreEqual(new Date(1990, 7, 1), _association.ValidFor.Start);
-			Assert.AreEqual(new Date(1990, 12, 1), _association.ValidFor.Stop);
 		}
 
 		[TestMethod]
@@ -151,8 +128,8 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 					Assert.AreEqual("044c0332-c869-4cd3-b957-7e5c9b4e0426", legalEntityPerson.Id.Guid.ToString());
 				}
 			}
-			var bestLocation = person.BestLocation;
-			var person2 = bestLocation.People.First();
+			var firstLocation = person.Locations.First();
+			var person2 = firstLocation.People.First();
 			Assert.AreEqual("1dda652c-6de9-4949-9d1a-b47b203136da", person2.Id.Guid.ToString());
 		}
 	}

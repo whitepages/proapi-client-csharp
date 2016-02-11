@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProApiLibrary.Api.Clients;
-using Durability = ProApiLibrary.Data.Entities.Durability;
 using EntityId = ProApiLibrary.Data.Entities.EntityId;
 using LocationAssociation = ProApiLibrary.Data.Associations.LocationAssociation;
 
@@ -27,7 +26,7 @@ namespace ProApiLibraryTests.TestCases.DataTests.AssociationTests
 		[ExpectedException(typeof (ArgumentException))]
 		public void EntityIdTypeConstraint()
 		{
-			var id = new EntityId(EntityId.EntityType.Business, Guid.NewGuid(), Durability.Durable);
+			var id = new EntityId(EntityId.EntityType.Business, Guid.NewGuid());
 			var assoc = new LocationAssociation(id, new ResponseDictionary(null));
 		}
 

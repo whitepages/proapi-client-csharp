@@ -30,7 +30,10 @@ namespace ProApiLibraryTests.TestCases.ApiTests.ClientTests.ResponseDecoderTests
 		[TestMethod]
 		public void HasAddress()
 		{
-			Assert.AreEqual("1301 5th Ave Ste 1600, Seattle WA 98101-2625", _location.Address);
+			Assert.AreEqual("1301 5th Ave Ste 1600", _location.StandardAddressLine1);
+			Assert.AreEqual("Seattle", _location.City);
+			Assert.AreEqual("WA", _location.StateCode);
+			Assert.AreEqual("98101", _location.PostalCode);
 		}
 
 		[TestMethod]

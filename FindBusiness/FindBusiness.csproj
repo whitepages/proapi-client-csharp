@@ -54,9 +54,9 @@
       <Project>{46c3c84b-5f46-4148-b5ea-98f636ffe6f8}</Project>
       <Name>ExamplesLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProApiLibrary\ProApiLibrary.csproj">
-      <Project>{7e8299ee-4474-41b1-bd22-63ead8bcc5a4}</Project>
-      <Name>ProApiLibrary</Name>
+    <ProjectReference Include="..\ProApiLibrary_PCL\ProApiLibrary_PCL.csproj">
+      <Project>{13aa2dbd-5caa-4534-9322-9097b75049c4}</Project>
+      <Name>ProApiLibrary_PCL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

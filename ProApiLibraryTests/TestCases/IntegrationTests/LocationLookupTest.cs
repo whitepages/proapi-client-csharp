@@ -28,7 +28,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 		[TestMethod]
 		public void ResultShouldHaveNoErrorMessage()
 		{
-			Assert.IsFalse(this.Response.ResponseMessages.GetMessageList(Message.MessageSeverity.Error).Any(), "Should have no Error Messages");
+			Assert.IsFalse(this.Response.ResponseMessages.Any(x=>x.Severity == Message.MessageSeverity.Error), "Should have no Error Messages");
 		}
 
 		[TestMethod]
@@ -44,7 +44,7 @@ namespace ProApiLibraryTests.TestCases.IntegrationTests
 			var found = this.Response.Results.First();
 			var business = found.Businesses.First();
 			var phone = business.Phones.First();
-			var expected = "2065057500";
+			var expected = "2065735140";
 			Assert.AreEqual(expected, phone.PhoneNumber, "Phone should be present");
 		}
 

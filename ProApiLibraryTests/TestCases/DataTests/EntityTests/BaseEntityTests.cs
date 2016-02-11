@@ -14,10 +14,9 @@ namespace ProApiLibraryTests.TestCases.DataTests.EntityTests
 	[TestClass]
 	public class BaseEntityTests
 	{
-		private static readonly EntityId _entityId = new EntityId(EntityId.EntityType.Person, Guid.NewGuid(),
-		                                                          Durability.Durable);
+		private static readonly EntityId _entityId = new EntityId(EntityId.EntityType.Person, Guid.NewGuid());
 
-		private static readonly EntityId _associatedPhoneId = new EntityId(EntityId.EntityType.Phone, Guid.NewGuid(), Durability.Durable);
+		private static readonly EntityId _associatedPhoneId = new EntityId(EntityId.EntityType.Phone, Guid.NewGuid());
 
 		private BaseEntity _entity;
 		private Phone _associatedPhone;
